@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+.record{
+	width: 100px;
+	height: 100px;
+	background-image: url(https://pioneeroptimist.com/wp-content/uploads/2021/03/among-us-6008615_1920-838x900.png);
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.record:hover{
+	transform: rotate(360deg);
+	transition: 1s;
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPueNQ45xsUl23SHOCZz-wow2FHUW7LO4vUA&usqp=CAU);
+}
+
+	</style>
+
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+	function makeRecord() {
+	var hehe = document.createElement("div");
+	document.body.appendChild(hehe);
+	hehe.classList.add("record")
+	}
+
+	setInterval(
+		makeRecord, 500
+		)
+
+</script>
+</body>
+</html>
