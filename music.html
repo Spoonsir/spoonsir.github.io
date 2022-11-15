@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#button{
+			width: 200px;
+			height: 200px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+
+<div id="button"></div>
+
+
+<script type="text/javascript">
+	
+	var counter = 0;
+	button.addEventListener(
+	"click", function (){
+		counter = counter + 1
+
+		if(counter%2 == 0){
+			console.log(counter);
+			button.style.backgroundColor ="green";
+		}
+
+		else if(counter%2 == 1){
+			console.log(counter);
+			button.style.backgroundColor = "red";
+		}
+		
+
+		
+			})
+</script>
+</body>
+</html>
