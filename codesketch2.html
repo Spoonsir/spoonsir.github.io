@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			cursor: none;
+		}
+		#background{
+			height: 100vh;
+			width: 100vw;
+			background-color: black;
+			display: grid;
+			align-items: center;
+		}
+
+		#box{
+
+			height:150px;
+			width: 150px;
+			background-color:yellow;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			border-radius: 100%;
+
+		}
+		
+
+
+
+		
+
+	</style>
+</head>
+<body>
+
+<audio src="sun.mp3"> </audio>
+<div id="box">
+</div>
+<div id="background">
+
+</div>
+<div id="eye"></div>
+<script type="text/javascript">
+	document.addEventListener("mousemove", function (event) { 
+	box.style.top = event.clientY - 50 + "px"
+	box.style.left= event.clientX - 50+"px"
+	
+			})
+
+			
+	</script>
+</body>
+</html>
