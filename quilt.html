@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        h1{
+            font-family:;
+            font-size:;
+            color:;
+        }
+
+        p{
+            font-family: courier;
+            font-size:;
+            color:;
+        }
+#box{
+    width:200px;
+    height: 200px;
+    background-color:green;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id=box></div>
+<h1> <!-- If you'd like a title, erase this text and feel free to put your title here! In the style section, in the curly brackets called "h1," put in the font style and font size you want --> <h1>
+
+<br><br>
+
+<p> <!-- If you'd like a description, feel free to put in your description here! Add your styling above in the curly brackets after "p" above --> Hello World" <p>
+
+
+<script type="text/javascript">
+
+var counter = 0;
+    box.addEventListener(
+    "click", function (){
+        counter = counter + 1
+
+        if(counter%2 == 0){
+            console.log(counter);
+            box.style.backgroundColor ="green";
+        }
+
+        else if(counter%2 == 1){
+            console.log(counter);
+            box.style.backgroundColor = "red";
+        }
+            })
+
+
+
+    
+   function makeSquare (x) {
+
+       var square = document.createElement('div');
+                        document.body.appendChild(square);
+square.style.width = "200px";
+   square.style.height = "200px";
+   square.style.display = "inline-block";
+            square.style.margin = "10px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "1px";
+            square.style.backgroundColor = "green";
+
+
+            square.style.backgroundSize = "contain";
+          square.id = "square" + x;
+
+          square.addEventListener("click", function(){
+
+        square.style.backgroundImage = "url(" + x + ".jpg)";
+        square.style.backgroundPosition="center"
+
+
+        square.style.backgroundColor="";
+          })
+    
+        }
+
+      
+ for (var i = 0; i < 3; i++)
+    { makeSquare(i);}
+         
+      
+
+
+   
+
+
+</script>
+</body>
+</html>

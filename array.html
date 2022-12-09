@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+#box{
+	height: 100px;
+	width: 100px;
+	border: 3px solid blue;
+	text-align: center;
+}	
+#box1{
+	height: 100px;
+	width: 100px;
+	border: 3px solid blue;
+	text-align: center;
+}	
+	</style>
+</head>
+<body>
+	<p>So there was a 
+<span id="box">________________ </span>
+hello
+<span id="box1">_______________</span>
+
+</p>
+
+<script type="text/javascript">
+	
+
+	var jobs = ["blacksmith", "stock trader", "frat guy", "police", "teacher","firefighter"]
+	var verb  = ["jumped", "crossed", "ran", "climbed", "loved", "cried"]
+
+	box.addEventListener("click", 
+		function () {
+			var random = Math.round(Math.random()*5);
+			box.innerText = jobs[random];
+		})
+	box1.addEventListener("click", 
+		function () {
+			var random1 = Math.round(Math.random()*5);
+			box1.innerText = verb[random1];
+		})
+
+</script>
+
+
+
+</body>
+</html>

@@ -18,7 +18,7 @@
 			align-items: center;
 		}
 
-		#box{
+		#circle{
 
 			height:150px;
 			width: 150px;
@@ -27,6 +27,9 @@
 			background-repeat: no-repeat;
 			position: absolute;
 			border-radius: 100%;
+
+		
+			box-shadow:0 0 100px yellow;
 
 		}
 		
@@ -39,8 +42,9 @@
 </head>
 <body>
 
-<audio src="sun.mp3"> </audio>
-<div id="box">
+<audio id= sun src="sun.mp3"> </audio>
+<div id="circle">
+
 </div>
 <div id="background">
 
@@ -48,9 +52,9 @@
 <div id="eye"></div>
 <script type="text/javascript">
 	document.addEventListener("mousemove", function (event) { 
-	box.style.top = event.clientY - 50 + "px"
-	box.style.left= event.clientX - 50+"px"
-	
+	circle.style.top = event.clientY - 50 + "px"
+	circle.style.left= event.clientX - 50+"px"
+	sun.play()
 			})
 
 			

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        h1{
+            font-family:;
+            font-size:;
+            color:;
+        }
+
+        p{
+            font-family: courier;
+            font-size:;
+            color:;
+        }
+#box{
+    width:200px;
+    height: 200px;
+    background-color:green;
+}
+#square{
+    width:200px;
+    height: 200px;
+    background-color: green;
+    background-size: contain;
+
+}
+
+    </style>
+</head>
+<body>
+    <div id=box></div>
+    <div id=square>
+        <img src= https://i.redd.it/jeuusd992wd41.jpg id="0.jpg">
+        <img src="" id="1.jpg">
+    </div>
+<h1> <!-- If you'd like a title, erase this text and feel free to put your title here! In the style section, in the curly brackets called "h1," put in the font style and font size you want --> <h1>
+
+<br><br>
+
+<p> <!-- If you'd like a description, feel free to put in your description here! Add your styling above in the curly brackets after "p" above --> Hello World" <p>
+
+
+<script type="text/javascript">
+
+var counter = 0;
+    box.addEventListener(
+    "click", function (){
+        counter = counter + 1
+
+        if(counter%2 == 0){
+            console.log(counter);
+            box.style.backgroundColor ="green";
+        }
+
+        else if(counter%2 == 1){
+            console.log(counter);
+            box.style.backgroundColor = "red";
+        }
+            })
+ var type = 0;
+    square.addEventListener(
+    "click", function (){
+        type = type + 1
+
+        if(type%2 == 0){
+            console.log(square);
+            square.style.background-image == "1.jpg";
+        }
+        else if (type%2 == 1){
+            console.log(square);
+            square.style.background-image == "0.jpg";
+        }
+
+   });
+
+
+</script>
+</body>
+</html>
