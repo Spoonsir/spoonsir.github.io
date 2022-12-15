@@ -7,13 +7,16 @@
 #box{
 	height: 100px;
 	width: 100px;
-	border: 3px solid blue;
 	text-align: center;
 }	
 #box1{
 	height: 100px;
 	width: 100px;
-	border: 3px solid blue;
+	text-align: center;
+}	
+#box2{
+	height: 100px;
+	width: 100px;
 	text-align: center;
 }	
 	</style>
@@ -21,8 +24,11 @@
 <body>
 	<p>So there was a 
 <span id="box">________________ </span>
-hello
+who
 <span id="box1">_______________</span>
+a
+<span id="box2">_______________</span>
+
 
 </p>
 
@@ -30,7 +36,8 @@ hello
 	
 
 	var jobs = ["blacksmith", "stock trader", "frat guy", "police", "teacher","firefighter"]
-	var verb  = ["jumped", "crossed", "ran", "climbed", "loved", "cried"]
+	var verb  = ["jumped", "crossed", "killed", "climbed", "loved", "walked"]
+	var object = ["border", "river", "wall", "pizza", "rocky path", "chicken"]
 
 	box.addEventListener("click", 
 		function () {
@@ -41,6 +48,12 @@ hello
 		function () {
 			var random1 = Math.round(Math.random()*5);
 			box1.innerText = verb[random1];
+		})
+
+	box2.addEventListener("click", 
+		function () {
+			var random2 = Math.round(Math.random()*5);
+			box2.innerText = object[random2];
 		})
 
 </script>
