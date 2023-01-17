@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+
+	#pic{
+		width: 900px;
+		height: 600px;
+
+	}	
+	</style>
+</head>
+<body>
+
+<img id= "pic" src="0.jpg"> </img>
+
+<script type="text/javascript">
+	pic.addEventListener("mousemove"
+		, function(){
+pic.style.filter = "hue-rotate("+event.clientX/2+event.clientY/2+"deg)"
+
+		})
+	// we adding event listener to picture with the thing mouse move which tracks the movement of the mouse. So then we have the pic.style.filter which goes into the img with the id pic and goes into the style then the filter and have it so the hue rotate become the mouses x/2 + the mouses y/2 but only over the img becuase of the event which is the pic
+
+</script>
+
+</body>
+</html>

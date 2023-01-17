@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<style type="text/css">
+			body{
+				background-color: rgb(77,77,77);
+			}
+#coordinates{ 
+width: 200px;
+height: 50px
+color: black;
+ }
+
+
+		</style>
+
+	</title>
+</head>
+<body>
+<div id = coordinates></div>
+<script type="text/javascript">
+	document.addEventListener("mousemove",
+		function(event){
+console.log(event.clientX,event.clientY)
+
+coordinates.innerText = event.clientX + "," + event.clientY
+document.body.style.backgroundColor = "rgb(0," + event.clientX/2 +"," + event.clientY/2 +")";
+		})
+
+</script>
+</body>
+</html>
