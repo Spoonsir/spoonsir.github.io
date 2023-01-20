@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#box1{
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			text-align: center;
+		}
+			#box2{
+			width: 200px;
+			height: 200px;
+			background-color: lightgreen;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="box1"></div>
+<div id="box2"></div>
+
+<script type="text/javascript">
+	
+	var latin =["felix,felicis", "manus,manus", "memor, memoris", "saevus,a,um", "metus,metus"]
+	var answers = ["happy", "hand,band,troop F", "mindful,remembering(+gen)", "cruel", "fear,dread M"]
+	document.addEventListener("click", function () {
+		var number = Math.round(Math.random()*4);
+	box1.innerText = latin[number]
+	function box2text(){
+		box2.innerText = answers[number]
+	}
+	setTimeout(box2text, 3000)
+	})
+	
+	
+	
+	
+</script>
+
+
+
+</body>
+</html>
