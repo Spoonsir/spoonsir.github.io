@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+<style type="text/css">
+	
+	#pics{
+height: 400px;
+width: 400px;
+/*background-image: url(background1.png);*/
+display: inline-block;
+background-size: contain;
+background-repeat: no-repeat;
+
+	}
+	#pics1{
+height: 400px;
+width: 400px;
+display: inline-block;
+background-size: contain;
+background-repeat: no-repeat;
+	}
+	#pics2{
+height: 400px;
+width: 400px;
+display: inline-block;
+background-size: contain;
+background-repeat: no-repeat;
+	}
+</style>
+</head>
+<body>
+
+	<div id="pics"></div>
+<div id="pics1"></div>
+<div id="pics2"></div>
+<div>
+HAPPY VALENTINES DAY U GOT INTO BROWN
+</div>
+<script type="text/javascript">
+	var background1 = ["yuna.jpg", "yuna1.jpg", "yuna2.jpg", "yuna3.jpg", "yuna4.jpg", "yuna5.jpg","yuna6.jpg", "yuna7.jpg", "yuna8.jpg", "yuna9.jpg", "yuna10.jpg"]
+
+	document.addEventListener("click",
+		function(){
+	var random = Math.round(Math.random()*10);
+			pics.style.backgroundImage = "url("+background1[random]+")";
+		})
+
+	document.addEventListener("click",
+		function(){
+	var random1 = Math.round(Math.random()*10);
+			pics1.style.backgroundImage = "url("+background1[random1]+")";
+		})
+
+	document.addEventListener("click",
+		function(){
+	var random2 = Math.round(Math.random()*10);
+			pics2.style.backgroundImage = "url("+background1[random2]+")";
+
+		})
+	</script>
+
+</body>
+</html>
