@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	#one{
+		width: 300px;
+		height: 300px;
+border-radius: 10px;
+			border: 3px solid black;
+			display: inline-block;
+		background-size: contain;
+background-repeat: no-repeat;
+	}	
+	#two{
+		width: 300px;
+		height: 300px;
+		border-radius: 10px;
+			border: 3px solid black;
+			display: inline-block;
+			background-size: contain;
+background-repeat: no-repeat;
+
+	}
+	#rock1{
+		height: 100px;
+		width: 100px;
+		background-image: url(rock.jpg);
+			display: inline-block;
+			background-size: contain;
+background-repeat: no-repeat;
+	}
+	#paper1{
+		height: 100px;
+		width: 100px;
+		background-image: url(paper.jpg);
+			display: inline-block;
+			background-size: contain;
+background-repeat: no-repeat;
+	}
+	#scissor1{
+		height: 100px;
+		width: 100px;
+		background-image: url(scissor.jpg);
+			display: inline-block;
+			background-size: contain;
+background-repeat: no-repeat;
+	}
+	#score1{
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+
+	}
+
+
+	</style>
+
+</head>
+<body>
+	<div id="score1"></div>
+<div id="one"></div>
+<div id="two"></div>
+<div id="rock1"></div>	
+<div id="paper1"></div>	
+<div id="scissor1"></div>	
+<script type="text/javascript">
+	var background = ["rock.jpg","scissor.jpg", "paper.jpg"]
+	var rock = ["rock.jpg"]
+		var paper = ["paper.jpg"]
+			var scissor = ["scissor.jpg"]
+		var x = 0 
+document.addEventListener("click",
+		function(){
+	var random = Math.round(Math.random()*2);
+			one.style.backgroundImage = "url("+background[random]+")";
+		})
+rock1.addEventListener("click",
+		function(){
+	var random1 = Math.round(Math.random()*0);
+			two.style.backgroundImage = "url("+rock[random1]+")";
+		})
+paper1.addEventListener("click",
+		function(){
+	var random2 = Math.round(Math.random()*0);
+			two.style.backgroundImage = "url("+paper[random2]+")";
+		})
+scissor1.addEventListener("click",
+		function(){
+	var random3 = Math.round(Math.random()*0);
+			two.style.backgroundImage = "url("+scissor[random3]+")";
+		})
+
+
+</script>
+
+
+</body>
+</html>

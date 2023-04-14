@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#circle{
+			width: 20px;
+			height: 20px;
+			border-radius: 100%;
+			background-color: black;
+			position: absolute;
+				background-size: contain;
+			background-repeat: no-repeat;
+		}
+		#circle2{
+			width: 10px;
+			height: 10px;
+			border-radius: 100%;
+			background-color: red;
+			position: absolute;
+				background-size: contain;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+<div id="circle"></div>
+<div id="circle2"></div>
+<script type="text/javascript">
+document.addEventListener("mousemove",
+	function(){
+
+	circle.style.top = event.clientY - 50 + "px"
+	circle.style.left= event.clientX - 50 + "px"
+circle2.style.top = event.clientY - 10  +"px"
+	circle2.style.left= event.clientX - 10 +"px"
+})
+
+
+</script>
+		
+<!-- 
+condense when mouse moves
+if statement like x=x -->
+
+</body>
+</html>
