@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	
+.button{
+
+height: 200px;
+text-align: center;
+transition:.5s;
+
+}
+
+.press{
+
+height: 200px;
+text-align: center;
+transition:.5s;
+
+}
+.push{
+
+height: 50px;
+text-align: center;
+transition:.5s;
+
+}
+.push:hover{
+background-color:pink;
+transition: .5s;
+}
+
+.hit{
+
+height: 200px;
+text-align: center;
+transition:.5s;
+
+}
+
+#menu{ 
+width:200px;
+height:200px;
+animation-name: dance;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+	position: relative;
+background-color:lightblue;
+
+ }
+ #hidden{ 
+width:50px;
+height:50px;
+
+animation-name: dance;
+	animation-duration:6s;
+	animation-iteration-count:infinite;
+	position: relative;
+background-color:black;
+
+ }
+ #hidden1{ 
+width:50px;
+height:50px;
+
+animation-name: fly;
+	animation-duration:6s;
+	animation-iteration-count:infinite;
+	position: relative;
+background-color:pink;
+
+ }
+  #hidden2{ 
+width:50px;
+height:50px;
+animation-name: fly;
+	animation-duration:6s;
+	animation-iteration-count:infinite;
+	position: relative;
+background-color:green;
+
+ }
+  #hidden3{ 
+width:50px;
+height:50px;
+animation-name: fly;
+	animation-duration:6s;
+	animation-iteration-count:infinite;
+	position: relative;
+background-color:yellow;
+
+ }
+ #next{
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:525px;
+	top:30px;
+	background-color:red;
+animation-name: fly;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	position: relative;
+}
+
+#shape{
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:525px;
+	top:100px;
+	background-color:lightgreen;
+animation-name: dance;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	position: relative;
+}
+@keyframes fly{
+	0%{
+		border-radius:0%;
+		left:525px;
+		top:30px;
+	}
+	5%{
+		border-radius:10%;
+		left:475px;
+		top:40px;
+	}
+	10%{
+		border-radius:20%;
+		left:425px;
+		top:50px;
+	}
+	15%{
+		border-radius:30%;
+		left:375px;
+		top:60px;
+	}
+	20%{
+		border-radius:40%;
+		left:325px;
+		top:70px;
+	}
+	25%{
+		border-radius:50%;
+		left:275px;
+		top:80; 
+	}
+	30%{
+		border-radius:40%;
+		left:325px;
+		top:90; 
+	}
+	35%{
+		border-radius:30%;
+		left:375px;
+		top: 100px;
+	}
+	40%{
+		border-radius:20%;
+		left:425px;
+		top:110px;
+	}
+	45%{
+		border-radius:10%;
+		left:475px;
+		top: 120px;
+	}
+	50%{
+		border-radius:0%;
+		left:525px;
+		top:105; 
+	}
+	55%{
+		border-radius:10%;
+		left:575px;
+		top: 90px;
+
+	}
+	60%{
+		border-radius:20%;
+		left:625px;
+		top:75px; 
+	}
+	65%{
+		border-radius:30%;
+		left:675px;
+		top: 65px;
+	}
+	70%{
+		border-radius:40%;
+		left:725px;
+		top: 50px;
+	}
+	75%{
+		border-radius:50%;
+		left:775px;
+		top: 35px;
+	}
+	80%{
+		border-radius:40%;
+		left:825px;
+		top: 20px;
+	}
+	85%{
+		border-radius:30%;
+		left:750px;
+		top: 5px;
+	}
+	90%{
+		border-radius:20%;
+		left:675px;
+		top: 20px;
+	}
+	95%{
+		border-radius:10%;
+		left:600px;
+		top: 30px;
+	}
+	100%{
+		border-radius:0%;
+		left:525px;
+		top: 30px;
+	}
+
+}
+@keyframes dance{
+	0%{
+		border-radius:0%;
+		left:525px;
+	}
+	5%{
+		border-radius:10%;
+		left:475px;
+	}
+	10%{
+		border-radius:20%;
+		left:425px;
+	}
+	15%{
+		border-radius:30%;
+		left:375px;
+	}
+	20%{
+		border-radius:40%;
+		left:325px;
+	}
+	25%{
+		border-radius:50%;
+		left:275px;
+	}
+	30%{
+		border-radius:40%;
+		left:325px;
+	}
+	35%{
+		border-radius:30%;
+		left:375px;
+	}
+	40%{
+		border-radius:20%;
+		left:425px;
+	}
+	45%{
+		border-radius:10%;
+		left:475px;
+	}
+	50%{
+		border-radius:0%;
+		left:525px;
+	}
+	55%{
+		border-radius:10%;
+		left:575px;
+	}
+	60%{
+		border-radius:20%;
+		left:625px;
+	}
+	65%{
+		border-radius:30%;
+		left:675px;
+	}
+	70%{
+		border-radius:40%;
+		left:725px;
+	}
+	75%{
+		border-radius:50%;
+		left:775px;
+	}
+	80%{
+		border-radius:40%;
+		left:825px;
+	}
+	85%{
+		border-radius:30%;
+		left:750px;
+	}
+	90%{
+		border-radius:20%;
+		left:675px;
+	}
+	95%{
+		border-radius:10%;
+		left:600px;
+	}
+	100%{
+		border-radius:0%;
+		left:525px;
+	}
+}
+body{
+	margin:0;
+}
+</style>
+</head>
+<body>
+
+
+<div id="hidden2"><a href="pr2.html"><div class="push"></div></a></div>
+
+<div id="menu">
+<a> <div class="button"></div></a>
+</div>
+<div id="hidden"></div>
+<div id="hidden1"></div>
+<div id="next"><a> <div class="hit"></div></a>
+</div>
+<div id="hidden3"></div>
+<div id="shape"><a> <div class="press"></div></a></div>
+
+</body>
+</html>

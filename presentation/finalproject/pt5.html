@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#box1{
+			width: 200px;
+			height: 200px;
+			background-color:color1;
+			border-radius: 10px;
+			border: 1px solid black;
+			display: inline-block;
+		}
+		#box2{
+			width: 200px;
+			height: 200px;
+			background-color:color1;
+			border-radius: 10px;
+			border: 1px solid black;
+			display: inline-block;
+		}
+		#box3{
+			width: 200px;
+			height: 200px;
+			background-color:color1;
+			border-radius: 10px;
+			border: 1px solid black;
+			display: inline-block;
+		}
+
+		#box4{
+			height: 200px;
+			width: 200px;
+			background-color: black;
+left: 500px;
+top: 500px;
+		}
+	
+		
+	</style>
+</head>
+<body>
+
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<a id="link"><div id="box4"></div></a>
+
+
+
+<script type="text/javascript">
+	var color1 = ["red", "blue","green" ]
+
+	var random;
+	var random1;
+	var random2;
+
+	document.addEventListener("click",
+		function(){
+	 random = Math.round(Math.random()*2);
+			box1.style.backgroundColor = color1[random];
+			if (random == 1 && random2 == 1 && random1 == 1) {
+
+	box4.style.backgroundColor = "blue"
+	link.href="pt6.html"
+
+}
+		})
+
+	document.addEventListener("click",
+		function(){
+	 random1 = Math.round(Math.random()*2);
+			box2.style.backgroundColor = color1[random1];
+			if (random == 1 && random2 == 1 && random1 == 1) {
+
+	box4.style.backgroundColor = "blue"
+	link.href="pt6.html"
+
+}
+		})
+
+	document.addEventListener("click",
+		function(){
+	 random2 = Math.round(Math.random()*2);
+			box3.style.backgroundColor = color1[random2];
+			if (random == 1 && random2 == 1 && random1 == 1) {
+
+	box4.style.backgroundColor = "blue"
+	link.href="pt6.html"
+
+}
+		})
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		#box1{
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			text-align: center;
+		}
+			#box2{
+			width: 200px;
+			height: 200px;
+			background-color: lightgreen;
+			text-align: center;
+		}
+.button{
+
+height: 200px;
+text-align: center;
+transition:.5s;
+
+
+}
+.button:hover{
+background-color:pink;
+transition: .5s;
+}
+
+
+	</style>
+
+</head>
+<body>
+	<div id="box1" class="button"><a href="pt5.html"></div>
+<div id="box2"></div>
+
+<script type="text/javascript">
+		
+	var latin =["click", "the", "bottom"]
+	var answers = ["on", "very", "box"]
+	document.addEventListener("click", function () {
+		var number = Math.round(Math.random()*2);
+	box1.innerText = latin[number]
+	function box2text(){
+		box2.innerText = answers[number]
+	}
+	setTimeout(box2text, 1000)
+
+
+	})
+	
+	
+	
+	
+</script>
+
+
+
+</body>
+</html>
